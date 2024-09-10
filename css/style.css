@@ -9,7 +9,7 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+.fa-solid, .fa-regular {
     color: var(--main-color);
 }
 
@@ -62,10 +62,10 @@ a {
 
 /****** Header ********************************/
 .navbar {
-display: flex;
-justify-content: space-between;
-height: 70px;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
 }
 
 .navbar img {
@@ -74,16 +74,16 @@ align-items: center;
 }
 
 .navbar li {
-list-style: none;
-height: 70px;
-display: flex;
-align-items: center;
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
 
 
 }
 
 .navbar li:hover {
-border-top: 1px blue solid;
+    border-top: 1px var(--main-color) solid;
     color: var(--main-color);
 }
 
@@ -100,6 +100,133 @@ border-top: 1px blue solid;
     align-items: center;
 
 
+}
+
+/****** Searchbar_Container & Searchbar *********/
+h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.search-container p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+form {
+    justify-content: flex-start;
+    display: flex;
+    
+}
+
+i.fa-solid.fa-location-dot, input {
+    height: 50px;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+i.fa-solid.fa-location-dot {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+}
+
+input {
+    font-weight: bold;
+    
+}
+
+input::placeholder {
+    color: black;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+
+
+#searchbar {
+    border: solid 1px #DEEBFF;
+    width: 197px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+
+#submit {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    width: 130px;
+}
+
+/****** Filtres de recherches *****************/
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 0;
+    border: none;
+   
+}
+
+.filters-container h3 {
+    font-size: 18px;
+    margin-left: 0px;
+    padding-right: 10px;
+    
+}
+
+.filter-button {
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 5px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--filter-bg-color);
+    background-color: white;
+}
+
+.filter-button:hover {
+    background-color: rgb(218, 228, 231);
+}
+
+.filter-button i {
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+.info-text {
+    padding-bottom: 35px;
+    padding-top: 0px;
+    
+}
+
+.fa-circle-info {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 45px;
+    border: solid 1.5px var(--main-color);
+    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/

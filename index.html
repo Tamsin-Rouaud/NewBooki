@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/1566d94259.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <ul class="main-container">
+    <div class="main-container">
         <header>
-        <!-- Ajout de la balise nav et son contenu pour la création de la Navbar -->
+            <!-- Ajout de la balise nav et son contenu pour la création de la Navbar -->
             <nav class="navbar">
                 <img src="./images/logo/Booki.png" alt="Logo Booki">
                 <ul class="navlinks">
@@ -27,9 +28,54 @@
             </nav>
         </header>
         <main>
+
+
+<!-- En-tête et container de recherche -->
+
+            <div class="search-container">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form action="#" method="get">
+                    <!-- Label pour la barre de recherche caché mais améliore l'accessibilité via les lecteurs d'écran -->
+                    <label for="searchbar" class="visually-hidden">Recherche</label>
+                    <!-- Icône de localisation -->
+                    <i class="fa-solid fa-location-dot"></i>
+                    <!-- Barre de recherche -->
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Marseille, France">
+                    <!-- Bouton de soumission -->
+                    <input type="submit" name="submit" id="submit" value="Rechercher">
+                </form>
+                <!-- Barre de filtres -->
+                <fieldset class="filters-container">
+                    <h3>Filtres</h3>
+                    <div class="filters">
+                        <button class="filter-button">
+                            <i class="fa-solid fa-money-bill-wave"></i> Économique
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-child"></i> Familial
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-heart"></i> Romantique
+                        </button>
+                        <button class="filter-button active">
+                            <i class="fa-solid fa-fire"></i> Nos pépites
+                        </button>
+                    </div>
+                </fieldset>
+                
+                <p class="info-text">
+                    <!-- icône fontawesome payante j'ai donc pris la gratuite et reproduit au mieux le css pour m'y conformer, vaut-il mieux prendre la gratuite en solid et la laisser telle quelle? -->
+                    <i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </div>
+
+
+<!-- Section  Hébergements et Populaires -->
+
             <div class="hebergements-and-populaires">
                 <section id="hebergements" class="hebergements">
-
+                   
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
