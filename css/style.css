@@ -207,7 +207,7 @@ input::placeholder {
 }
 
 .filter-button:hover {
-    background-color: rgb(218, 228, 231);
+    background-color: #DEEBFF;
 }
 
 .filter-button i {
@@ -233,6 +233,7 @@ input::placeholder {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .hebergements-and-populaires section {
@@ -245,7 +246,52 @@ input::placeholder {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    border: blue solid 2px;
 }
+
+.hebergements .section-title {
+    padding-bottom: 30px;
+}
+.hebergement-card {
+    height: 207px;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+
+
+}
+
+.hebergement-card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.hebergements .card-content {
+margin-left: 10px;
+}
+
+.hebergements .card-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+
 
 /****** Populaires ***********/
 .populaires {
