@@ -225,7 +225,7 @@ input::placeholder {
     background-color: var(--main-color);
     color: white;
     border-radius: 45px;
-    border: solid 1.5px var(--main-color);
+    border: solid 1.5px var(--filter-bg-color);
     margin-right: 10px;
 }
 
@@ -246,22 +246,35 @@ input::placeholder {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    border: blue solid 2px;
+    
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
 }
 
-.hebergements .section-title {
-    padding-bottom: 30px;
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    
 }
+
 .hebergement-card {
-    height: 207px;
-    width: 250px;
+    height: 195px;
+    width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     border-top-right-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 
 
 }
@@ -273,7 +286,8 @@ input::placeholder {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 5px;
-    height: 110px;
+    height: 100px;
+    width: 95%;
     object-fit: cover;
 }
 
@@ -287,9 +301,15 @@ margin-left: 10px;
 }
 
 .card-subtitle {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     
+}
+
+.learn-more {
+    font-weight: bold;
+    margin: 0px;
+
 }
 
 
