@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -61,6 +62,7 @@ a {
 }
 
 /****** Header ********************************/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -103,6 +105,7 @@ a {
 }
 
 /****** Searchbar_Container & Searchbar *********/
+
 h1 {
     font-size: 22px;
     margin-bottom: 5px;
@@ -230,6 +233,7 @@ input::placeholder {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -244,9 +248,9 @@ input::placeholder {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
-    
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -275,8 +279,6 @@ input::placeholder {
     margin-top: 15px;
     margin-bottom: 15px;
     
-
-
 }
 
 .hebergement-card img {
@@ -314,6 +316,7 @@ margin-left: 10px;
 
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -379,22 +382,18 @@ margin-left: 10px;
 
 .activities-cards a {
     width: 23.25%;
-    /* margin-left: 10px; */
 }
 
 .activity-card img {
-height: 380px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-object-fit: cover;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
 }
-
 
 .activity-card {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* width: 100%; */
     height: 440px;
     padding: 0px;
     margin: auto;
@@ -406,7 +405,40 @@ padding-left: 10px;
 font-size: 16px;
 }
 
+/****** Footer ******************/
 
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    /* width: 1340px; */
+}
+
+.a-propos, .nos-hebergements, .assistance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 445px;
+}
+
+.a-propos {
+    margin-left: 30px;
+}
+.container-footer ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+.container-footer li {
+    padding-bottom: 8px;
+}
+.container-footer h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
