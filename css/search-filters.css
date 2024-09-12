@@ -1,0 +1,51 @@
+/****** Search filters *****************/
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 0;
+    border: none;
+}
+
+.filters-container h3 {
+    font-size: 18px;
+    margin-left: 0px;
+    padding-right: 10px;
+}
+
+.btn{
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 5px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--filter-bg-color);
+    background-color: var(--white-color);
+}
+
+.btn:hover {
+    background-color: #DEEBFF;
+}
+
+.btn i {
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+.info-text {
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.fa-circle-info {
+    background-color: var(--main-color);
+    color:var(--white-color);
+    border-radius: 45px;
+    border: solid 1.5px var(--filter-bg-color);
+    margin-right: 10px;
+}

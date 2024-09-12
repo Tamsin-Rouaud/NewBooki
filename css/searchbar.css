@@ -1,0 +1,61 @@
+/****** Searchbar_Container & Searchbar *********/
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.search-container p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+form {
+    justify-content: flex-start;
+    display: flex;
+}
+
+i.fa-solid.fa-location-dot, input {
+    height: 50px;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+i.fa-solid.fa-location-dot {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#searchbar::placeholder {
+    color: black; 
+}
+
+#searchbar {
+    border: solid 1px #DEEBFF;
+    width: 185px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    padding-left: 15px;
+}
+
+#submit {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #0065FC;
+    color:var(--white-color);
+    border: none;
+    width: 13%;
+}
