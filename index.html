@@ -20,8 +20,11 @@
 </head>
 
 <body>
+
+    <!-- *** Conteneur principal *** -->
     <div class="main-container">
 
+    <!-- *** Navbar (liens de navigation et logo) *** -->
         <header>
             <!-- Ajout de la balise nav et son contenu pour la création de la Navbar -->
             <nav class="navbar">
@@ -32,14 +35,14 @@
                 </ul>
             </nav>
         </header>
-
         <main>
 
-<!-- *** En-tête et container de recherche *** -->
-
+            <!-- *** Conteneur de recherche *** -->
             <div class="search-container">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
+
+                <!-- *** Formulaire de recherche *** -->
                 <form action="#" method="get">
                     <!-- Label pour la barre de recherche caché mais améliore l'accessibilité via les lecteurs d'écran -->
                     <label for="searchbar" class="visually-hidden">Recherche</label>
@@ -50,7 +53,8 @@
                     <!-- Bouton de soumission -->
                     <input type="submit" name="submit" id="submit" value="Rechercher">
                 </form>
-                <!-- Barre de filtres -->
+
+                <!-- *** Filtres de recherche *** -->
                 <fieldset class="filters-container">
                     <h3>Filtres</h3>
                     <div class="filters">
@@ -68,23 +72,23 @@
                         </button>
                     </div>
                 </fieldset>
-                
+                <!-- *** Infotexte *** -->
                 <p class="info-text">
-                    <!-- icône fontawesome payante j'ai donc pris la gratuite et reproduit au mieux le css pour m'y conformer, vaut-il mieux prendre la gratuite en solid et la laisser telle quelle? -->
                     <i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville
                 </p>
             </div>
 
-<!-- *** Section  Hébergements et Populaires *** -->
-
+            <!-- *** Sections Hébergements et Populaires *** -->
             <div class="hebergements-and-populaires">
+
+                <!-- *** Sections Hébergements *** -->
                 <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
-                            <article class="hebergement-card card">
+                            <article class="hebergement-card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Hôtel du Port">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -200,6 +204,8 @@
                     </div>
                     <p class="learn-more">Afficher plus</p>
                 </section>
+
+                <!-- *** Sections Populaires *** -->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -266,11 +272,19 @@
                     </div>
                 </section>
             </div>
+
+            <!-- *** Conteneur Activités *** -->
             <div class="container-activities">
+
+            <!-- *** Sections Activités *** -->
             <section class="activity" id="activity">
+
+                    <!-- *** Titre section Activités *** -->
                     <div class="activities-title">
                         <h2 class="activities-section-title">Activités à Marseille</h2>
                     </div>
+
+                    <!-- *** Conteneur Cards Activités *** -->
                     <div class="activities-cards">
                         <a href="#">
                             <article class="activity-card card">
@@ -301,6 +315,7 @@
             </div>
         </main>
 
+        <!-- *** Conteneur Footer *** -->
         <footer class="container-footer">
             
                 <div class="a-propos">
